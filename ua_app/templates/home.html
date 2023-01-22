@@ -1,0 +1,43 @@
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UA</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <div class="top">
+        <h1>Device Info</h1>
+    </div><br/><br/>
+    <div class="con">
+        <h2>General Info</h2>
+        <p><b>IP : </b> {{ip}}</p>
+        <p><b>User Agent : </b> {{user_agent}}</p>
+        <p><b>isBot : </b> {{isBot}}</p>
+        <p><b>Device : </b> {{device}}</p>
+        <p><b>Browser Family : </b> {{browserFamily}}</p>
+        <p><b>Os Family : </b> {{osFamily}}</p>
+        <p><b>Brand : </b> {{brand}}</p>
+        <p><b>Model : </b> {{model}}</p>
+        <h2>Client Info</h2>
+        <p><b>Type : </b> {{type}}</p>
+        <p><b>Name : </b> {{name}}</p>
+        <p><b>Version : </b> {{version}}</p>
+        <p><b>Engine : </b> {{engine}}</p>
+        <p><b>Engine Version : </b> {{engine_version}}</p>
+        <p><b>Family : </b> {{family}}</p>
+        <h2>OS Info</h2>
+        <p><b>OS Name : </b> {{os_name}}</p>
+        <p><b>OS Short Name : </b> {{os_short_name}}</p>
+        <p><b>OS Version : </b> {{os_version}}</p>
+        <p><b>OS Platform : </b> {{os_platform}}</p>
+    </div>
+</body>
+</html>
+{% endblock %}
+
+
